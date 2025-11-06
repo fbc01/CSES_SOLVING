@@ -9,6 +9,10 @@
 #include<vector>
 #include<stack>
 #include<queue>
+#include<deque>
+#include<bitset>
+#include<iterator>
+#include<numeric>
 #include<set>
 #include<unordered_set>
 #include<stack>
