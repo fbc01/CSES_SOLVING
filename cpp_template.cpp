@@ -25,8 +25,26 @@ using namespace std;
 
 #define ll long long
 
-void solve() {
+class MinHeap {
+    public:
+        bool operator() (pair<int, int>& a, pair<int, int>& b) {
+            return a.first > b.first;
+        }
+};
 
+class MaxHeap {
+    public:
+        bool operator() (pair<int, int>& a, pair<int, int>& b) {
+            return a.first < b.first;
+        }
+};
+
+bool compare(pair<int, int>& a, pair<int, int>& b) {
+    return a.first < b.first;
+}
+
+void solve() {
+    
 }
 
 int main() {
@@ -34,11 +52,11 @@ int main() {
     cin.tie(0);
     cout.tie(0);
 
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--) {
         solve();
     }
